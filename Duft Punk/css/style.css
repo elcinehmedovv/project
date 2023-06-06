@@ -1,0 +1,138 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    color: rgb(235, 235, 235);
+}
+a{
+    color: rgb(235, 235, 235);
+    text-decoration: none;
+    font-weight: 500;
+}
+.header{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.clear{
+    clear: both;
+}
+#navbar{
+    padding: 15px 0px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: black;
+    z-index: 100;
+}
+#navbar .logo img{
+    width: 90px;
+}
+#navbar .menu a{
+    margin-left: 20px;
+    color: white!important;
+}
+#banner{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#banner .title{
+    font-size: 150px;
+}
+#banner .subtitle{
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+#about, #albums, #contact{
+    margin: 50px 0px;
+    padding: 20px 0px;
+}
+#about .about-text{
+    text-align: justify;
+    line-height: 1.7;
+    word-spacing: 2;
+}
+#albums .album-item{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all .3s ease;
+    cursor: pointer;
+    position: relative;
+}
+#albums .album-item.is-on-sale::before{
+    content: "SALE";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    text-align: center;
+    line-height: 40px;
+    top: 20px;
+    right: 20px;
+    font-size: 12px;
+    font-weight: bolder;
+    border-radius: 50%;
+    background-color: #BC1908;
+}
+
+#albums .album-item:hover{
+    transform: scale(1.03);
+    box-shadow:0px 0px 35px 0px #fffffff2;
+}
+#albums .album-item img{
+    width: 100%;
+    border-radius: 10px;
+}
+#albums .album-item .title{
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+    margin: 15px 0px 10px;
+}
+#albums .album-item .price{
+    margin-bottom: 5px;
+    color: #BC1908;
+    font-weight: bolder;
+    font-size: 30px;
+}
+#contact a.contact-info{
+    color: #BC1908;
+    font-size: 25px;
+    text-decoration: none;
+}
+#contact form{
+    margin-top: 40px;
+}
+#contact input, #contact textarea{
+    outline: none!important;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    border:none;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #2c2c2c;
+    display: block;
+    width: 100%;
+}
+#contact textarea{
+    height: 150px;
+    min-width: 100%;
+    max-width: 100%;
+}
+footer{
+    margin: 50px 0px;
+}
+footer p{
+    font-size: 25px;
+    font-weight: bolder;
+}

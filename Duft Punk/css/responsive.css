@@ -1,0 +1,37 @@
+@media (max-width: 767.98px) {
+    #navbar .logo img {
+      width: 60px;
+    }
+    #navbar .menu a {
+      font-size: 14px;
+    }
+    #banner{
+        text-align: center;
+    }
+    #banner .title {
+      font-size: 60px;
+    }
+    #banner .subtitle {
+      font-size: 20px;
+      letter-spacing: 1;
+    }
+  }
+  
+@media (max-width: 767.98px) {
+  #navbar .logo img {
+    width: 60px;
+  }
+  #navbar .menu a {
+    font-size: 14px;
+  }
+  #banner{
+      text-align: center;
+  }
+  #banner .title {
+    font-size: 60px;
+  }
+  #banner .subtitle {
+    font-size: 20px;
+    letter-spacing: 1;
+  }
+}
